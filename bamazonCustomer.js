@@ -25,7 +25,36 @@ function startShopping() {
         message: "How many would you like to buy?"
     }).then(function(answer) {
         switch (answer.action) {
-            case 
+            case "Bamazon Echo", "Electronics":
+                buyEcho();
+                break;
+            case "Bamazon Kindle":
+                buyEcho();
+                break;
+            case "How to be an Awesome JavaScript Developer":
+                buyEcho();
+                break;
+            case "Star Wars: Episodes IV-VI":
+                buyEcho();
+                break;
+            case "Garden Gnome":
+                buyEcho();
+                break;
+            case "Bananas":
+                buyEcho();
+                break;
+            case "Creedance Clearwater Revival box set":
+                buyEcho();
+                break;
+            case "Basketball":
+                buyEcho();
+                break;
+            case "Motor oil":
+                buyEcho();
+                break;
+            case "Parks and Recreation DVD series":
+                buyEcho();
+                break;
         }
     })
 }
