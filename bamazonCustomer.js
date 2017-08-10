@@ -18,7 +18,8 @@ function startShopping() {
     inquirer.prompt ({
         name: "selectId",
         type: "rawlist",
-        message: "What would you like to buy?"
+        message: "What would you like to buy?",
+        choices: [/*List choices or pull from DB*/]
     } , {
         name: "quantity",
         type: "input",
@@ -56,5 +57,5 @@ function startShopping() {
                 buyEcho();
                 break;
         }
-    })
+    });
 }
