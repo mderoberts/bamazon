@@ -1,11 +1,11 @@
 var mysql = require('mysql');
-var inquirer = requirer('inquirer');
+var inquirer = require('inquirer');
 
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "",
+    password: "pwd123",
     database: "bamazonDB"
 });
 
@@ -30,32 +30,84 @@ function startShopping() {
                 buyEcho();
                 break;
             case "Bamazon Kindle":
-                buyEcho();
+                buyKindle();
                 break;
             case "How to be an Awesome JavaScript Developer":
-                buyEcho();
+                buyJsBook();
                 break;
             case "Star Wars: Episodes IV-VI":
-                buyEcho();
+                buyStarWars();
                 break;
             case "Garden Gnome":
-                buyEcho();
+                buyGnome();
                 break;
             case "Bananas":
-                buyEcho();
+                buyBananas();
                 break;
             case "Creedance Clearwater Revival box set":
-                buyEcho();
+                buyCcr();
                 break;
             case "Basketball":
-                buyEcho();
+                buyBasketball();
                 break;
             case "Motor oil":
-                buyEcho();
+                buyOil();
                 break;
             case "Parks and Recreation DVD series":
-                buyEcho();
+                buyParksRec();
                 break;
         }
     });
 }
+
+function buyEcho() {
+
+}
+
+function buyKindle() {
+
+}
+
+function buyJsBook() {
+    
+}
+
+function buyStarWars() {
+    
+}
+
+function buyGnome() {
+    
+}
+
+function buyBananas() {
+    
+}
+
+function buyCcr() {
+    
+}
+
+function buyBasketball() {
+    
+}
+
+function buyOil() {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

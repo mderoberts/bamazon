@@ -25,5 +25,6 @@ VALUES ("Bamazon Echo", "Electronics", 180, 32),
   ("Basketball", "Recreation", 12, 15),
   ("Motor oil", "Automotive", 5, 26),
   ("Parks and Recreation DVD series", "Movies & TV", 50, 14);
-
+ 
+ SELECT * FROM products;
 
