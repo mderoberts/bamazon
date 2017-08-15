@@ -1,18 +1,16 @@
--- CREATE DATABASE bamazonDB;
+DROP DATABASE IF EXISTS bamazonDB;
+CREATE DATABASE bamazonDB;
 
 USE bamazonDB;
 
--- CREATE TABLE products (
---  item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
---  product_name VARCHAR(50) NOT NULL,
---  department_name VARCHAR(50) NOT NULL,
---  price INTEGER(11) NOT NULL,
---  stock_quantity INTEGER(11) NOT NULL,
---  PRIMARY KEY (item_id)
--- )
-
--- ALTER TABLE products 
--- ADD prime_subscriptions INTEGER(11) AFTER stock_quantity;
+CREATE TABLE products(
+    id INT NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR(40) NOT NULL,
+    dept_name VARCHAR(40) NOT NULL,
+    price INT NOT NULL,
+    quantity INT NOT NULL,
+    PRIMARY KEY (id)
+);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 VALUES ("Bamazon Echo", "Electronics", 180, 32),
@@ -27,4 +25,3 @@ VALUES ("Bamazon Echo", "Electronics", 180, 32),
   ("Parks and Recreation DVD series", "Movies & TV", 50, 14);
  
  SELECT * FROM products;
-
